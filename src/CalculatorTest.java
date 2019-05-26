@@ -22,5 +22,16 @@ public class CalculatorTest {
 		
 		assertEquals(expected, result);
 	}
+	
+	@Test
+	public void subtractingTwoDigtsTest_ShouldReturnSubtractingTwoDigit_IfGivenTwoNumbers() {
+		
+		int result = c1.subtractingTwoDigts(10, 5);
+		
+		int expected = 5;
+		
+		assertEquals(expected, result);
+		
+	}
 
 }
