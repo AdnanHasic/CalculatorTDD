@@ -33,5 +33,18 @@ public class CalculatorTest {
 		assertEquals(expected, result);
 		
 	}
+	
+	@Test
+	public void multiplyingTwoDigitTest_ShouldReturnResultMultiplyingTwoDigit_IfGivenTwoNumbers() {
+		
+		int result = c1.multiplyingTwoDigit(10, 5);
+		
+		int expected = 50;
+			
+		assertEquals(expected, result);
+			
+	}
+	
+	
 
 }
