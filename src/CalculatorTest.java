@@ -45,6 +45,24 @@ public class CalculatorTest {
 			
 	}
 	
+	@Test(expected = Exception.class) 
+	public void dividingByTwoDigitExceptionTest() throws Exception {
+		
+		c1.dividingByTwoDigit(0, 5);
+	}
+	
+	@Test
+	public void dividingByTwoDigitTest_ShouldReturnResultDividingTwoDigit_IfGivenTwoNumbers() throws Exception {
+		
+		double result = c1.dividingByTwoDigit(10,5);
+		
+		double expected = 2;
+		
+		double delta = 0.01;
+		
+		assertEquals(expected, result, delta);
+	}
+	
 	
 
 }
